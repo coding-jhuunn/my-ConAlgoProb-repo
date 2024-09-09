@@ -1,21 +1,25 @@
-const exampleArr = [2, 5, 7, 1, 23, 4];
+function bubbleSort(arr, range) {
+  let isFlag;
+  let swapped;
+  for (let i = 0; i < range - 1; i++) {
+    isFlag = false;
 
-let newArrangement = [];
-let swamp = 0;
-let flag;
-for (let i = 0; i < exampleArr.length - 1; i++) {
-  for (let j = 0; j < exampleArr.length - 1 - i; j++) {
-    if (exampleArr[j] > exampleArr[j + 1]) {
-      swamp = exampleArr[j];
-      exampleArr[j] = exampleArr[j + 1];
-      exampleArr[j + 1] = swamp;
-      flag = true;
+    for (let j = 0; j < range - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        swapped = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = swapped;
+        isFlag = true;
+      }
+      console.log(arr);
+    }
+
+    if (isFlag == false) {
+      break;
     }
   }
-  if (!flag) {
-    break;
-  }
 }
-//restudy
-//bubble sort algo
-console.log(exampleArr);
+
+let arr = [7, 4, 23, 9, 20, 18];
+let range = arr.length;
+bubbleSort(arr, range);
