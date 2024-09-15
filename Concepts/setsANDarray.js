@@ -18,7 +18,7 @@ function newUnion(sA, sB) {
   }
   return newUnion;
 }
-const lettersA = new Set(["a", "b", "c"]);
+const lettersA = new Set(["a", "b", "c", "f"]);
 const lettersB = new Set(["a", "d", "e", "f"]);
 console.log(newUnion(lettersA, lettersB));
 
@@ -27,4 +27,9 @@ console.log(newUnion(lettersA, lettersB));
 const newIntersect = new Set([...lettersA].filter((i) => lettersB.has(i)));
 console.log(...newIntersect);
 
+// difference
+
+const diffSet = new Set([lettersA].filter((x) => ![lettersB].includes(x)));
+
+console.log(diffSet);
 //array
