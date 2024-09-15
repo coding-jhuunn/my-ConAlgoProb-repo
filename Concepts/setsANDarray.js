@@ -9,7 +9,8 @@
 //   console.log(value);
 // }
 
-function newLetter(sA, sB) {
+// union
+function newUnion(sA, sB) {
   const newUnion = new Set(sA);
 
   for (const num of sB) {
@@ -18,7 +19,12 @@ function newLetter(sA, sB) {
   return newUnion;
 }
 const lettersA = new Set(["a", "b", "c"]);
-const lettersB = new Set(["d", "e", "f"]);
-newLetter(lettersA, lettersB);
-console.log(newLetter(lettersA, lettersB));
+const lettersB = new Set(["a", "d", "e", "f"]);
+console.log(newUnion(lettersA, lettersB));
+
+//intersection
+// middle
+const newIntersect = new Set([...lettersA].filter((i) => lettersB.has(i)));
+console.log(...newIntersect);
+
 //array
