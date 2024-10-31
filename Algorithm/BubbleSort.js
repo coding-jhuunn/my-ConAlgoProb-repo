@@ -20,6 +20,6 @@ function bubbleSort(arr, range) {
   }
 }
 
-let arr = [7, 4, 23, 9, 20, 18];
+let arr = [25, 4, 23, 9, 20, 18, 25, 4, 23, 9, 20, 18];
 let range = arr.length;
 bubbleSort(arr, range);

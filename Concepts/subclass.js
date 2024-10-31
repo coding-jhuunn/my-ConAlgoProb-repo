@@ -24,3 +24,4 @@ class Magazines extends Book {
 
 const mag1 = new Magazines("title", "1", "2000", "Kan");
 console.log(mag1);
+s;
