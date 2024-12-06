@@ -36,3 +36,20 @@ function displaySquare(fn) {
 console.log(displaySquare(square));
 
 ```
+
+_what is IIFE_
+
+> immediatley invoked function expressions
+>
+> > examples
+
+```
+(function square(num) {
+  console.log(num);
+})(5);
+
+```
+
+_what is closure?_
+
+> the ability of a function to access variables and functions that are lexically out of its scope
