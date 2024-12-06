@@ -53,3 +53,8 @@ _what is IIFE_
 _what is closure?_
 
 > the ability of a function to access variables and functions that are lexically out of its scope
+
+_what is hoisting?_
+
+> is where the variables are hosted on top of our code before code is executed, and how our code is first initialized and then it's executed
+> functions behave differently in hoisting
