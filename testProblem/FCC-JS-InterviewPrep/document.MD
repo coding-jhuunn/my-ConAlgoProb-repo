@@ -58,3 +58,18 @@ _what is hoisting?_
 
 > is where the variables are hosted on top of our code before code is executed, and how our code is first initialized and then it's executed
 > functions behave differently in hoisting
+
+_what is spread and rest operator?_
+
+```
+function multiply(...nums) {
+  //rest oeprator
+  console.log(nums);
+}
+
+var arr = [5, 6];
+multiply(...arr); // spread operator
+
+```
+
+> if you use rest operator or spread operators, it should always be the last one
